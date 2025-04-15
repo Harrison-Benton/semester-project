@@ -27,12 +27,51 @@ document.addEventListener("DOMContentLoaded", function () {
         <strong>${name}</strong> - <em>${category}</em><br />
         <strong>${title}</strong>
         <p>${content}</p>
+        <button class="reply-btn">Reply</button>
+        <div class="reply-form hidden">
+          <input type="text" placeholder="Your name" class="reply-name">
+          <textarea rows="2" placeholder="Your reply..." class="reply-text"></textarea>
+          <button class="submit-reply">Post Reply</button>
+        </div>
+        <div class="replies"></div>
       `;
   
       threadContainer.appendChild(newPost);
-  
-      // Reset form
       postForm.reset();
+    });
+  
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("reply-btn")) {
+        const post = e.target.closest(".post");
+        const form = post.querySelector(".reply-form");
+        form.classList.toggle("hidden");
+      }
+    });
+  
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("submit-reply")) {
+        const post = e.target.closest(".post");
+        const nameInput = post.querySelector(".reply-name");
+        const textInput = post.querySelector(".reply-text");
+        const repliesContainer = post.querySelector(".replies");
+  
+        const name = nameInput.value.trim();
+        const text = textInput.value.trim();
+  
+        if (!name || !text) {
+          alert("Please fill out both fields.");
+          return;
+        }
+  
+        const reply = document.createElement("div");
+        reply.className = "reply";
+        reply.innerHTML = `<strong>${name}</strong>: <p>${text}</p>`;
+        repliesContainer.appendChild(reply);
+  
+        nameInput.value = "";
+        textInput.value = "";
+        post.querySelector(".reply-form").classList.add("hidden");
+      }
     });
   });
   

@@ -405,13 +405,14 @@ body {
 }
 
 .contact-info h1 {
+  color: #00008b;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 .contact-info h2 {
-  font-size: 1.5em;
-  color: #003366;
+  font-size: 1.9em;
+  color: black;
 }
 
 .contact-info p {
@@ -427,6 +428,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.info-item p{
+  margin-bottom: 3px;
 }
 
 .info-item img {

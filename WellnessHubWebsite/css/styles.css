@@ -494,4 +494,81 @@ body {
   text-align: center;
 }
 
+/* ======= Auth Forms (Sign In & Sign Up) ======= */
+.auth-form-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 3rem auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #315cad;
+}
+
+.auth-form-container form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.auth-form-container form input[type="text"],
+.auth-form-container form input[type="email"],
+.auth-form-container form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.auth-form-container form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.auth-form-container form button[type="submit"],
+#continueBtn {
+  background-color: #315cad;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-form-container form button:hover,
+#continueBtn:hover {
+  background-color: #254086;
+}
+
+.auth-form-container p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.auth-form-container p a {
+  color: #315cad;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-form-container p a:hover {
+  text-decoration: underline;
+}
+
+#continueBtn {
+  display: none;
+  margin: 1rem auto 0;
+  display: block;
+}
 

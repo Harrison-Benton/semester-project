@@ -5,10 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       signinForm.addEventListener("submit", function (e) {
         e.preventDefault();
         alert("Sign in successful!");
-        const continueBtn = document.getElementById("continueBtn");
-        if (continueBtn) {
-          continueBtn.style.display = "inline-block";
-        }
+        window.location.href = "index.html";
       });
     }
   

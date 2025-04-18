@@ -572,3 +572,153 @@ body {
   display: block;
 }
 
+/* General Body Styling */
+.homepage-body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Featured Sections */
+.featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 80%;
+}
+
+.card h3 {
+  font-size: 1.25em;
+  color: darkblue;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.search-form {
+  margin-top: 20px; 
+  text-align: center; 
+  border: none;
+}
+
+.search-input {
+  padding: 10px; 
+  width: 300px; 
+  border: 2px solid #003366; 
+  border-radius: 5px 0 0 5px;
+  outline: none; 
+}
+
+.search-button {
+  padding: 10px 20px; 
+  border: 2px solid #003366; 
+  border-left: none; 
+  border-radius: 0 5px 5px 0; 
+  background-color: #003366; 
+  color: white; 
+  cursor: pointer; 
+  margin-left: -7px;
+}
+
+.search-button:hover {
+  background-color: #002244; 
+}
+
+
+.middle-section {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 80%; 
+  margin: 0 auto; 
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+}
+
+.image-container {
+  flex: 1; 
+}
+
+.image-container img {
+  width: 100%; 
+  border-radius: 10px; 
+  float: left;
+}
+
+.text-container { 
+  color: black; 
+}
+
+.text-container h2 {
+  font-size: 2em;
+  color: darkblue;
+}
+
+.text-container h3 {
+  font-size: 1.5em;
+  color: black;
+}
+
+.text-container p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px; 
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column; 
+  gap: 40px; 
+  padding: 20px;
+}
+
+.content-block {
+  display: flex; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+.image-container img {
+  width: 50%; 
+  border-radius: 10px; 
+}
+
+.text-container {
+  flex: 1; 
+}
+
+.text-container h3 {
+  font-size: 1.5em;
+  color: #003366; 
+}
+
+.text-container p {
+  font-size: 1em;
+  color: #666; 
+  margin-bottom: 10px; 
+}
+
+.hero-image img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.responsive-image {
+  max-width: 100%; 
+  height: auto; 
+}
+

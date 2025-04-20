@@ -583,7 +583,7 @@ body {
 .featured {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  gap: 5px; 
 }
 
 .card {
@@ -593,8 +593,11 @@ body {
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 250px;
+  width: 350px;
   margin: 0 auto;
+  height: 400px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card h3 {
